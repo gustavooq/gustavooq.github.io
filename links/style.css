@@ -1,74 +1,90 @@
 /* ==========================================================================
-   Variáveis de Cores e Temas (Customizável com facilidade)
+   Variáveis de Cores e Estilo Tech Glassmorphism
    ========================================================================== */
 :root {
-  /* Tema Escuro (Padrão) */
-  --bg-gradient: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #090d16 60%, #030712 100%);
-  --bg-color: #030712;
-  --glow-1: rgba(99, 102, 241, 0.18);
-  --glow-2: rgba(168, 85, 247, 0.15);
+  /* Tema Escuro Tech (Padrão) */
+  --bg-color: #060913;
+  --bg-gradient: radial-gradient(circle at 50% -10%, #171b38 0%, #090d18 55%, #03060c 100%);
+  --grid-line: rgba(255, 255, 255, 0.025);
   
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-bg-hover: rgba(255, 255, 255, 0.09);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --card-border-hover: rgba(129, 140, 248, 0.5);
-  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
-  --card-shadow-hover: 0 12px 30px -4px rgba(99, 102, 241, 0.25);
+  --glow-1: rgba(99, 102, 241, 0.22);
+  --glow-2: rgba(56, 189, 248, 0.16);
+  --glow-accent: rgba(168, 85, 247, 0.18);
   
+  /* Efeito Vidro Fosco (Glassmorphism) */
+  --glass-bg: rgba(15, 23, 42, 0.55);
+  --glass-bg-hover: rgba(26, 36, 64, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(99, 102, 241, 0.55);
+  --glass-highlight: inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  --glass-shadow-hover: 0 16px 40px -4px rgba(99, 102, 241, 0.35);
+
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   
   --accent-color: #6366f1;
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
   --accent-light: rgba(99, 102, 241, 0.15);
   
-  --featured-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15));
-  --featured-border: rgba(139, 92, 246, 0.5);
+  /* Card WhatsApp Especial */
+  --wa-glass-bg: linear-gradient(135deg, rgba(37, 211, 102, 0.12) 0%, rgba(15, 23, 42, 0.65) 100%);
+  --wa-border: rgba(37, 211, 102, 0.38);
+  --wa-border-hover: rgba(37, 211, 102, 0.85);
+  --wa-shadow-hover: 0 16px 45px -4px rgba(37, 211, 102, 0.35);
+  --wa-badge: linear-gradient(135deg, #10b981 0%, #059669 100%);
   
-  --btn-bg: rgba(255, 255, 255, 0.06);
+  --btn-bg: rgba(255, 255, 255, 0.05);
   --btn-border: rgba(255, 255, 255, 0.12);
-  --btn-hover: rgba(255, 255, 255, 0.15);
+  --btn-hover: rgba(255, 255, 255, 0.12);
   
   --toast-bg: rgba(15, 23, 42, 0.95);
   --toast-text: #f8fafc;
 }
 
 [data-theme="light"] {
-  /* Tema Claro */
-  --bg-gradient: radial-gradient(circle at 50% -20%, #e0e7ff 0%, #f8fafc 60%, #f1f5f9 100%);
-  --bg-color: #f8fafc;
+  /* Tema Claro Tech */
+  --bg-color: #f1f5f9;
+  --bg-gradient: radial-gradient(circle at 50% -10%, #e0e7ff 0%, #f8fafc 55%, #e2e8f0 100%);
+  --grid-line: rgba(0, 0, 0, 0.035);
+  
   --glow-1: rgba(99, 102, 241, 0.12);
-  --glow-2: rgba(192, 132, 252, 0.1);
+  --glow-2: rgba(56, 189, 248, 0.1);
+  --glow-accent: rgba(168, 85, 247, 0.08);
   
-  --card-bg: rgba(255, 255, 255, 0.85);
-  --card-bg-hover: rgba(255, 255, 255, 1);
-  --card-border: rgba(226, 232, 240, 0.8);
-  --card-border-hover: rgba(99, 102, 241, 0.4);
-  --card-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.05);
-  --card-shadow-hover: 0 10px 25px -4px rgba(99, 102, 241, 0.15);
-  
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-hover: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(226, 232, 240, 0.9);
+  --glass-border-hover: rgba(99, 102, 241, 0.5);
+  --glass-highlight: inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+  --glass-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.06);
+  --glass-shadow-hover: 0 14px 35px -4px rgba(99, 102, 241, 0.2);
+
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #94a3b8;
   
   --accent-color: #4f46e5;
-  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #0284c7 100%);
   --accent-light: rgba(99, 102, 241, 0.1);
   
-  --featured-bg: linear-gradient(135deg, rgba(238, 242, 255, 0.9), rgba(245, 243, 255, 0.9));
-  --featured-border: rgba(129, 140, 248, 0.5);
+  --wa-glass-bg: linear-gradient(135deg, rgba(220, 252, 231, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  --wa-border: rgba(34, 197, 94, 0.45);
+  --wa-border-hover: rgba(34, 197, 94, 0.8);
+  --wa-shadow-hover: 0 14px 35px -4px rgba(34, 197, 94, 0.25);
+  --wa-badge: linear-gradient(135deg, #10b981 0%, #059669 100%);
   
-  --btn-bg: rgba(255, 255, 255, 0.9);
+  --btn-bg: rgba(255, 255, 255, 0.85);
   --btn-border: rgba(226, 232, 240, 1);
   --btn-hover: rgba(241, 245, 249, 1);
   
-  --toast-bg: rgba(15, 23, 42, 0.92);
+  --toast-bg: rgba(15, 23, 42, 0.94);
   --toast-text: #ffffff;
 }
 
 /* ==========================================================================
-   Reset & Estilos Globais
+   Reset & Grid de Fundo Tech
    ========================================================================== */
 * {
   margin: 0;
@@ -79,7 +95,11 @@
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-color);
-  background-image: var(--bg-gradient);
+  background-image: 
+    var(--bg-gradient),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 100% 100%, 36px 36px, 36px 36px;
   background-attachment: fixed;
   color: var(--text-primary);
   min-height: 100vh;
@@ -94,63 +114,67 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efeito de brilho de fundo decorativo */
+/* Orbes de brilho suave ambiente */
 .bg-glow {
   position: fixed;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .bg-glow-1 {
-  top: -100px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--glow-1);
 }
 
 .bg-glow-2 {
-  bottom: 50px;
-  right: -100px;
+  bottom: 20px;
+  right: -120px;
   background: var(--glow-2);
 }
 
 /* ==========================================================================
-   Barra de Ações no Topo (Header)
+   Barra de Ações Rápidas no Topo
    ========================================================================== */
 .top-nav {
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 18px;
+  right: 18px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
   z-index: 100;
 }
 
 .nav-btn {
-  background: var(--btn-bg);
-  border: 1px solid var(--btn-border);
+  position: relative;
+  overflow: hidden;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-highlight), 0 4px 16px rgba(0, 0, 0, 0.15);
   color: var(--text-primary);
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .nav-btn:hover {
-  background: var(--btn-hover);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
   transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3), var(--glass-highlight);
 }
 
 .nav-btn:active {
@@ -176,8 +200,8 @@ body {
    ========================================================================== */
 .container {
   width: 100%;
-  max-width: 580px;
-  padding: 60px 20px 40px;
+  max-width: 520px;
+  padding: 65px 20px 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,37 +209,38 @@ body {
 }
 
 /* ==========================================================================
-   Seção de Perfil
+   Perfil
    ========================================================================== */
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .avatar-wrapper {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .avatar {
-  width: 104px;
-  height: 104px;
+  width: 108px;
+  height: 108px;
   border-radius: 50%;
   object-fit: cover;
   padding: 3px;
   background: var(--accent-gradient);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .avatar-wrapper:hover .avatar {
-  transform: scale(1.04) rotate(2deg);
+  transform: scale(1.05) rotate(2deg);
 }
 
+/* Indicador de status online pulsante */
 .status-badge {
   position: absolute;
   bottom: 6px;
@@ -225,50 +250,69 @@ body {
   background-color: #10b981;
   border: 3px solid var(--bg-color);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-ring 2.2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.8);
+  }
+  70% {
+    box-shadow: 0 0 0 9px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
 }
 
 .profile-info .name {
-  font-size: 1.55rem;
-  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  letter-spacing: -0.02em;
+  gap: 8px;
+  letter-spacing: -0.025em;
 }
 
 .verified-icon {
   color: #38bdf8;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
 }
 
 .profile-info .handle {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--accent-color);
-  margin-top: 2px;
+  margin-top: 3px;
   letter-spacing: -0.01em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .profile-info .bio {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--text-secondary);
-  max-width: 440px;
+  max-width: 420px;
   margin-top: 10px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .location-tag {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   font-size: 0.8rem;
   color: var(--text-muted);
-  margin-top: 10px;
-  background: var(--btn-bg);
-  padding: 4px 12px;
+  margin-top: 12px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  padding: 4px 14px;
   border-radius: 20px;
-  border: 1px solid var(--btn-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  letter-spacing: 0.02em;
 }
 
 /* ==========================================================================
@@ -278,42 +322,68 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 14px;
+  margin-top: 22px;
   flex-wrap: wrap;
 }
 
 .social-icon {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-highlight), 0 4px 16px rgba(0, 0, 0, 0.12);
   color: var(--text-secondary);
   text-decoration: none;
-  transition: all 0.25s ease;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Brilho que passa por cima do ícone social ao passar o mouse */
+.social-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.65s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+
+.social-icon:hover::after {
+  left: 170%;
 }
 
 .social-icon:hover {
   color: var(--text-primary);
-  background: var(--card-bg-hover);
-  border-color: var(--card-border-hover);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35), var(--glass-highlight);
 }
 
 /* ==========================================================================
-   Lista de Links
+   Lista de Links (Glassmorphism + Efeito de Brilho Dinâmico)
    ========================================================================== */
 .links-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -321,24 +391,50 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 16px 20px;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
+  padding: 18px 22px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
   text-decoration: none;
   color: inherit;
-  box-shadow: var(--card-shadow);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: var(--glass-highlight), var(--glass-shadow);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
 
+/* 🌟 EFEITO DE BRILHO QUE PASSA POR CIMA AO PASSAR O MOUSE 🌟 */
+.link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.05) 35%,
+    rgba(255, 255, 255, 0.32) 50%,
+    rgba(255, 255, 255, 0.05) 65%,
+    transparent 80%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.85s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.link-card:hover::before {
+  left: 170%;
+}
+
 .link-card:hover {
-  background: var(--card-bg-hover);
-  border-color: var(--card-border-hover);
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: var(--card-shadow-hover);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: var(--glass-highlight), var(--glass-shadow-hover);
 }
 
 .link-card:active {
@@ -346,43 +442,45 @@ body {
 }
 
 .card-icon {
-  font-size: 1.6rem;
-  width: 44px;
-  height: 44px;
+  font-size: 1.65rem;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--accent-light);
-  border-radius: 12px;
+  border-radius: 14px;
   flex-shrink: 0;
-  margin-right: 16px;
-  transition: transform 0.25s ease;
+  margin-right: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .link-card:hover .card-icon {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(4deg);
 }
 
 .card-text {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  min-width: 0; /* Impede quebra feia de texto */
+  gap: 3px;
+  min-width: 0;
 }
 
 .card-title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .card-desc {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
   white-space: nowrap;
   overflow: hidden;
@@ -394,53 +492,65 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  margin-left: 14px;
   flex-shrink: 0;
-  transition: transform 0.25s ease, color 0.25s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .link-card:hover .card-arrow {
   color: var(--accent-color);
-  transform: translateX(4px);
+  transform: translateX(5px);
 }
 
-/* Card em Destaque */
+/* ==========================================================================
+   Card em Destaque Especial (WhatsApp Tech Glass)
+   ========================================================================== */
 .link-card.featured {
-  background: var(--featured-bg);
-  border-color: var(--featured-border);
-  box-shadow: 0 6px 25px -4px rgba(124, 58, 237, 0.25);
+  background: var(--wa-glass-bg);
+  border-color: var(--wa-border);
+  box-shadow: var(--glass-highlight), 0 10px 35px -5px rgba(37, 211, 102, 0.2);
 }
 
 .link-card.featured:hover {
-  border-color: #a855f7;
-  box-shadow: 0 12px 30px -2px rgba(168, 85, 247, 0.4);
+  border-color: var(--wa-border-hover);
+  box-shadow: var(--glass-highlight), var(--wa-shadow-hover);
+}
+
+.link-card.featured .card-icon {
+  background: rgba(37, 211, 102, 0.18);
+  border-color: rgba(37, 211, 102, 0.3);
+}
+
+.link-card.featured .card-arrow {
+  color: #25d366;
 }
 
 .card-badge {
   position: absolute;
-  top: 8px;
-  right: 12px;
-  background: var(--accent-gradient);
+  top: 10px;
+  right: 14px;
+  background: var(--wa-badge);
   color: #ffffff;
   font-size: 0.68rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 12px;
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.5);
 }
 
 /* ==========================================================================
    Rodapé
    ========================================================================== */
 .footer {
-  margin-top: 40px;
+  margin-top: 45px;
   text-align: center;
   font-size: 0.82rem;
   color: var(--text-muted);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .footer a {
@@ -472,10 +582,10 @@ body {
   border-radius: 30px;
   font-size: 0.9rem;
   font-weight: 600;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   opacity: 0;
   pointer-events: none;
@@ -488,38 +598,39 @@ body {
 }
 
 /* ==========================================================================
-   Responsividade para Telas Muito Pequenas
+   Responsividade para Celulares
    ========================================================================== */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .container {
-    padding: 50px 14px 30px;
+    padding: 55px 16px 35px;
   }
   
   .avatar {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
   }
   
   .profile-info .name {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
   }
   
   .link-card {
-    padding: 14px 16px;
+    padding: 16px 18px;
+    border-radius: 18px;
   }
   
   .card-icon {
-    width: 38px;
-    height: 38px;
-    font-size: 1.3rem;
-    margin-right: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
+    margin-right: 14px;
   }
   
   .card-title {
-    font-size: 0.92rem;
+    font-size: 0.96rem;
   }
   
   .card-desc {
-    font-size: 0.78rem;
+    font-size: 0.79rem;
   }
 }
